@@ -260,6 +260,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1em;
+  max-height: 25px;
 }
 
 /*nav*/
@@ -455,6 +456,22 @@ header {
   .services + .services {
     margin-left: 2em;
   }
+
+  /* .services::after{
+    border-left: 6px solid green;
+    height: 15em;
+    width: 1em;
+  } */
+
+  /* .services::after + .services::after {
+    content: "";
+    display: block;
+    width: 1em;
+    height: 15em;
+    margin: 0.5em auto 1em;
+    background: var(--clr-accent);
+    opacity: 0.5;
+  } */
 }
 
 /* about me */
@@ -637,4 +654,22 @@ header {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+/* buttom scroll */
+#scrollToTopBtn {
+  background-color:skyblue;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 48px;
+  width: 48px;
+
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
 }
