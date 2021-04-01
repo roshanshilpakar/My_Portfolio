@@ -508,6 +508,7 @@ header {
 
 .about-me__img {
   box-shadow: var(--bs);
+  border-radius: 5em;
 }
 
 @media (min-width: 600px) {
@@ -548,7 +549,7 @@ header {
 /* my work */
 .my-work {
   background: rgb(25,43,133);
-background: radial-gradient(circle, rgba(25,43,133,1) 4%, rgba(25,43,133,1) 12%, rgba(24,38,109,1) 19%, rgba(24,36,102,1) 28%, rgba(23,33,91,1) 33%, rgba(23,30,80,1) 42%, rgba(23,28,72,1) 50%, rgba(23,25,59,1) 68%, rgba(23,20,41,1) 77%, rgba(25,43,133,1) 89%, rgba(23,15,20,1) 90%, rgba(23,12,8,0.5049370089832808) 100%);
+  background: radial-gradient(circle, rgba(25,43,133,1) 4%, rgba(25,43,133,1) 12%, rgba(24,38,109,1) 19%, rgba(24,36,102,1) 28%, rgba(23,33,91,1) 33%, rgba(23,30,80,1) 42%, rgba(23,28,72,1) 50%, rgba(23,25,59,1) 68%, rgba(23,20,41,1) 77%, rgba(25,43,133,1) 89%, rgba(23,15,20,1) 90%, rgba(23,12,8,0.5049370089832808) 100%);
   color: var(--clr-light);
   text-align: center;
 }
@@ -565,6 +566,14 @@ background: radial-gradient(circle, rgba(25,43,133,1) 4%, rgba(25,43,133,1) 12%,
 .portfolio__item {
   background: var(--clr-accent);
   overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 2em;
+  flex: 0 0 calc(12.5% - 1rem);
+
 }
 
 .portfolio__img {
@@ -581,6 +590,16 @@ background: radial-gradient(circle, rgba(25,43,133,1) 4%, rgba(25,43,133,1) 12%,
   transform: scale(1.2);
   opacity: 0.5;
 }
+
+
+/* domains */
+.my-domains {
+  background: rgb(195,34,184);
+  background: radial-gradient(circle, rgba(195,34,184,1) 0%, rgba(0,0,0,1) 100%); 
+  color: var(--clr-light);
+  text-align: center;
+}
+
 
 /* footer */
 .footer {
