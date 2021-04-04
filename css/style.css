@@ -9,6 +9,7 @@
 :root {
   --ff-primary: 'Lora', serif;
   --ff-secondary: 'Roboto Slab', serif;
+  --ff-title:'Dancing Script', cursive;
 
   --fw-reg: 400;
   --fw-bold: 700;
@@ -363,18 +364,28 @@ strong {
 }
 
 .section__subtitle--intro,
-.section__subtitle--about {
+.section__subtitle--about{
   background: var(--clr-accent);
   padding: 0.25em;
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-title);
+  font-weight: 700px;
   margin-bottom: 1em;
 }
 
 .section__subtitle--work {
   color: var(--clr-accent);
+  font-family: var(--ff-title);
   font-weight: var(--fw-bold);
   margin-bottom: 2em;
 }
+
+.section__subtitle--domains {
+  color: var(--clr-accent);
+  font-family: var(--ff-title);
+  font-weight: var(--fw-bold);
+  margin-bottom: 2em;
+}
+
 
 /* header */
 header {
