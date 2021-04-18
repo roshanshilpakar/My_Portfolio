@@ -10,6 +10,7 @@
   --ff-primary: 'Lora', serif;
   --ff-secondary: 'Roboto Slab', serif;
   --ff-title:'Dancing Script', cursive;
+  --mainColor: #ff9800;
 
   --fw-reg: 400;
   --fw-bold: 700;
@@ -50,6 +51,7 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   line-height: 1.6;
+  margin: 1rem;
 }
 
 section {
@@ -83,6 +85,7 @@ h3 {
 .section__title {
   margin: 0.25em;
 }
+
 strong {
   font-weight: var(--fw-bold);
 }
@@ -233,10 +236,10 @@ strong {
 .btn-download {
   position: relative;
   display: inline-block;
-  padding: 25px 50px;
+  padding: 10px 15px;
   background: rgb(32, 218, 193);
   margin: 5px 0;
-  border-radius: 50%;
+  border-radius: 2rem;
   color: #21ce0a;
   text-decoration: none;
   font-size: 1rem;
@@ -256,7 +259,7 @@ strong {
 
 .btn-download:hover {
   background: #f4b403;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #050801;
   box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
     0 0 7px #03e9f4;
@@ -371,6 +374,7 @@ strong {
   font-family: var(--ff-title);
   font-weight: 700px;
   margin-bottom: 1em;
+  
 }
 
 .section__subtitle--work {
@@ -551,6 +555,7 @@ header {
   /* filter: blur(8px);
     -webkit-filter: blur(8px); */
   background-size: cover;
+  border-radius: 10rem;
   background-blend-mode: multiply;
   color: var(--clr-light);
   text-align: center;
@@ -690,6 +695,7 @@ header {
   background: radial-gradient(circle, rgba(25,43,133,1) 4%, rgba(25,43,133,1) 12%, rgba(24,38,109,1) 19%, rgba(24,36,102,1) 28%, rgba(23,33,91,1) 33%, rgba(23,30,80,1) 42%, rgba(23,28,72,1) 50%, rgba(23,25,59,1) 68%, rgba(23,20,41,1) 77%, rgba(25,43,133,1) 89%, rgba(23,15,20,1) 90%, rgba(23,12,8,0.5049370089832808) 100%);
   color: var(--clr-light);
   text-align: center;
+  border-radius: 10rem;
 }
 
 .section__subtitle--work {
@@ -906,6 +912,7 @@ header {
   margin: 5px;
 }
 
+
 .portfolio-item-individual p{
   color: burlywood;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
@@ -932,3 +939,5 @@ header {
   bottom: 30px;
   right: 30px;
 }
+
+
