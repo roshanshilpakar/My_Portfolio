@@ -56,7 +56,7 @@ body {
 }
 
 section {
-  padding: 5em 2em;
+  padding: 3em 2em;
 }
 
 img {
@@ -693,15 +693,17 @@ header {
 /* my work */
 .my-work {
   background: rgb(25,43,133);
-  background: radial-gradient(circle, rgb(26, 28, 37) 4%, rgba(25,43,133,1) 12%, rgb(142, 160, 250) 19%, rgba(24,36,102,1) 28%, rgb(149, 165, 255) 33%, rgba(23,30,80,1) 42%, rgb(145, 156, 255) 50%, rgba(23,25,59,1) 68%, rgba(23,20,41,1) 77%, rgb(154, 171, 255) 89%, rgba(23,15,20,1) 90%, rgba(23,12,8,0.5049370089832808) 100%);
+  background: radial-gradient(circle, rgb(166, 190, 190) 4%, rgb(138, 157, 255) 12%,  rgb(166, 190, 190) 28%, rgb(149, 165, 255) 33%, rgb(145, 156, 255) 50%,  rgb(154, 171, 255) 89%);
   color: var(--clr-light);
   text-align: center;
   border-radius: 5px;
+  color: rgba(17, 15, 15, 0.781);
 }
 
 .section__subtitle--work {
-  color: var(--clr-accent);
+  color: rgb(27, 8, 109);
   font-weight: bolder;
+
 }
 .portfolio {
   display: grid;
@@ -709,7 +711,7 @@ header {
 }
 
 .portfolio__item {
-  background: var(--clr-accent);
+  background: whitesmoke;
   overflow: hidden;
   display: flex;
   justify-content: space-evenly;
@@ -748,69 +750,83 @@ header {
 
 /* skills */
 
-.mh-skills .mh-professional-skill{
-  padding-right: 60px;
-  color: red;
+.b-skills
+{
+	border-top: 1px solid #f9f9f9;
+	padding-top: 46px;
+	text-align: center;
 }
 
 
-.mh-skills .mh-professional-skill h3{
-  font-size: 30px;
-  line-height: 40px;
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 60px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.mh-professional-skills{
-  padding-left: 20%;
-}
-
-.mh-professional-skills h3{
-  font-size: 30px;
-  line-height: 40px;
-  text-align: center;
-  font-weight: 400;
-  margin-bottom: 60px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.mh-professional-progress li{
-  display: inline-block;
-  margin: 0 auto;
-  float: none;
-  width: 48%;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.mh-progress{
-  margin-bottom: 10px;
-  font: 900 1.14285/1, cursive;
-  color: blue;
-}
-
-.mh-progress .progressbar-text{
-  color: inherit !important;
-  font-family: 'Poppins', sans-serif;
-}
-
-.progress.progress-line{
-  height: 10px;
-  margin-right: 60px;
-}
 
 
-.progress.progress-line .progress-text{
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  width: 60px;
-  transform: translateY(-35%);
-  text-align: center;
-  font-family: 'Poppins',sans-serif;
+.b-skills:last-child { 
+  margin-bottom: -30px; }
+
+.b-skills h2 { margin-bottom: 50px; font-weight: 900; text-transform: uppercase;}
+
+.skill-item
+{
+	position: relative;
+	max-width: 250px;
+	width: 100%;
+	margin-bottom: 30px;
+	color: #555;
 }
+
+.chart-container
+{
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 100%;
+	margin-bottom: 27px;
+}
+
+.skill-item .chart,
+.skill-item .chart canvas
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.skill-item .chart:before
+{
+	content: "";
+	width: 0;
+	height: 100%;
+}
+
+.skill-item .chart:before,
+.skill-item .percent
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.skill-item .percent
+{
+	position: relative;
+	line-height: 1;
+	font-size: 40px;
+	font-weight: 900;
+	z-index: 2;
+}
+
+.skill-item  .percent:after
+{
+	content: attr(data-after);
+	font-size: 20px;
+}
+       
+       p{
+           font-weight: 900;
+       }
+ 
+
 
 
 /* footer */
